@@ -1,0 +1,91 @@
+.text {
+  color: aqua;
+  text-align: center;
+  font-size: 44px;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+}
+.container {
+  background-image: linear-gradient(
+  to bottom,
+  #f44336 15%,
+  #09792b 40%,
+  #00b9ff 65%,
+  #ffb800
+);
+
+}
+
+.section {
+  background-image: url(/images/image1.jpg);
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-position: 50% 50%;
+  background-size: ;
+}
+.box::before {
+  content: 'Це текст в ::before';
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: 'Це текст в ::after';
+  font-size: 30px;
+  color: teal;
+}
+/* Застосувати стилі до псевдоелемента .box :: before у разі ховера по елементу .box */
+.box:hover::before {
+  color: green;
+}
+
+/* Застосувати стилі до псевдоелемента .box :: after у разі ховера по елементу .box */
+.box:hover::after {
+  color: tomato;
+}
+.list-link::before,
+.list-link::after {
+  content: '';
+  display: inline-block
+  width: 24px;
+  height: 24px;
+}
+
+.test::before{
+  content: "Любов переможе все";
+  font-size: 30px;
+  color: mediumvioletred;
+  
+}
+
+.test:hover::before {
+  content: "Любов переможе все";
+  font-size: 30px;
+  color: rgb(74, 21, 199);
+ 
+  
+}
+
+.button{
+  background-color: #00b9ff;
+  color: azure;
+  padding: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+}
+.button:hover{
+  background-color: blueviolet;
+}
+
+.button::after{
+  background-color: gold;
+  background-image: url(../images/She.png);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  content:"";
+  margin-left: 10px;
+}
